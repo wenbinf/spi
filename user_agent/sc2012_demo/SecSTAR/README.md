@@ -1,4 +1,5 @@
-* SecSTAR
+SecSTAR
+=======
 
 Visualize system structure and security property. There are two components:
 - SecSTAR/SecSTAR: Python scripts (require: pydot module)
