@@ -12,6 +12,8 @@ Learn more:
 * [Paper @ VizSec 2012](http://research.cs.wisc.edu/mist/papers/Wenbin12SecSTAR.pdf)
 * [Visualization demo](http://research.cs.wisc.edu/mist/projects/SecSTAR/)
 
+*** Note: This repository is no longer maintained. ***
+
 Install
 -------
 1. Copy example-make.config to be "config.mk".
