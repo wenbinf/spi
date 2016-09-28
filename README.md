@@ -1,3 +1,17 @@
+Self-propelled Instrumentation
+==============================
+
+Overview
+--------
+
+Self-propelled instrumentation is a binary instrumentation technique that dynamically injects a fragment of code into an application process on demand. The instrumentation is inserted ahead of the control flow within the process and is propagated into other processes, following communication events, crossing host boundaries, and collecting a distributed function-level trace of the execution. Self-propelled instrumentation contains two major components. The first is the Agent. It is a shared library that automatically inserts and propagates a piece of payload code at function call events in a running process, where the payload code contains user-defined logic, such as generating trace data for later inspection. The second component is the Injector. It is a process that causes an application process to load the Agent shared library, where the Injector should have at least the same privilege as the application process. Self-propelled instrumentation does binary instrumentation within the application process’s address space, avoiding use of the debugging interfaces (e.g., Linux ptrace and Windows debug interface) and costly interprocess communications. Therefore, self-propelled instrumentation does not add significant overhead to a process during runtime.
+
+Learn more:
+
+* [Poster @ Supercomputer 2012](ftp://ftp.cs.wisc.edu/paradyn/posters/Fang12SelfPropelled.pdf)
+* [Paper @ VizSec 2012](http://research.cs.wisc.edu/mist/papers/Wenbin12SecSTAR.pdf)
+* [Visualization demo](http://research.cs.wisc.edu/mist/projects/SecSTAR/)
+
 Install
 -------
 1. Copy example-make.config to be "config.mk".
