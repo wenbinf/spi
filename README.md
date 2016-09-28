@@ -1,4 +1,3 @@
--------
 Install
 -------
 1. Copy example-make.config to be "config.mk".
@@ -10,32 +9,32 @@ Install
   - DYNLINK: true for building shared library for agent, otherwise for building
     static library
 
----------------------
 Environment variables
 ---------------------
-1. FOR DEBUGGING
-1.1. SP_COREDUMP: enables core dump when segfault happens
-1.2. SP_DEBUG: enables printing out debugging messages
-1.3. SP_TEST_RELOCINSN: only uses instruction relocation instrumentation worker
-1.4, SP_TEST_RELOCBLK: only uses call block relocation instrumentation worker
-1.5, SP_TEST_SPRING: only uses sprint block instrumentation worker
-1.6, SP_TEST_TRAP: only uses trap instrumentation worker
-1.7, SP_NO_TAILCALL: don't instrument tail calls
-1.8, SP_LIBC_MALLOC: will always use libc malloc
-1.9, SP_NO_LIBC_MALLOC: will never use libc malloc
 
-2. FOR RUNTIME
-PLATFORM: 'i386-unknown-linux2.4' for x86 or 'x86_64-unknown-linux2.4' for
+FOR DEBUGGING
+
+1. SP_COREDUMP: enables core dump when segfault happens
+2. SP_DEBUG: enables printing out debugging messages
+3. SP_TEST_RELOCINSN: only uses instruction relocation instrumentation worker
+4. SP_TEST_RELOCBLK: only uses call block relocation instrumentation worker
+5. SP_TEST_SPRING: only uses sprint block instrumentation worker
+6. SP_TEST_TRAP: only uses trap instrumentation worker
+7. SP_NO_TAILCALL: don't instrument tail calls
+8. SP_LIBC_MALLOC: will always use libc malloc
+9. SP_NO_LIBC_MALLOC: will never use libc malloc
+
+FOR RUNTIME
+
+* PLATFORM: 'i386-unknown-linux2.4' for x86 or 'x86_64-unknown-linux2.4' for
           x86-64
-SP_DIR: the root directory of self-propelled instrumentation.
-SP_AGENT_DIR: the directory path of agent shared library that will be injected.
+* SP_DIR: the root directory of self-propelled instrumentation.
+* SP_AGENT_DIR: the directory path of agent shared library that will be injected.
 
----------------------
 Shared memory id used
 ---------------------
-1. 1986: for communication between injector process and user process
+* 1986: for communication between injector process and user process
 
---------------
 Make arguments
 --------------
 - For testing
@@ -58,7 +57,6 @@ Make arguments
   - make clean_all: clean everything, including dependency
   - make clean_objs: clean core self-propelled objs
 
----
 SSH
 ---
 - To run test suite:
