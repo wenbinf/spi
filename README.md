@@ -8,7 +8,7 @@ Self-propelled instrumentation is a binary instrumentation technique that dynami
 
 Learn more:
 
-* [Poster @ Supercomputer 2012](ftp://ftp.cs.wisc.edu/paradyn/posters/Fang12SelfPropelled.pdf)
+* [Poster @ Supercomputer 2012](https://github.com/wenbinf/spi/files/497189/Fang12SelfPropelled.pdf)
 * [Paper @ VizSec 2012](http://research.cs.wisc.edu/mist/papers/Wenbin12SecSTAR.pdf)
 * [Visualization demo](http://research.cs.wisc.edu/mist/projects/SecSTAR/)
 
